@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import SectionTitle from './SectionTitle';
-import { CERTIFICATES_DATA } from '../constants';
+import { CERTIFICATE_CATEGORIES } from '../constants';
 import type { CertificateItem } from '../types';
 import { CertificateIcon, ExternalLinkIcon } from './icons';
 import FadeIn from './FadeIn';
 
+// CertificateCard component (Ismein koi change nahi hai)
 interface CertificateCardProps {
     certificate: CertificateItem;
     index: number;
@@ -31,8 +32,7 @@ const CertificateCard: React.FC<CertificateCardProps> = ({ certificate, index, f
             onClick={handleCardClick}
         >
             <div className={`flip-card-inner ${isFlipped ? 'flipped' : ''}`}>
-                {/* Front Side */}
-                <div className="flip-card-front bg-navy p-6 shadow-lg flex flex-col group-hover:-translate-y-2 transition-transform duration-300">
+                <div className="flip-card-front bg-navy p-6 shadow-lg flex flex-col group-hover:-translate-y-2 transition-transform duration-300 h-full">
                     <div className="flex justify-between items-center mb-4">
                         <CertificateIcon className="w-10 h-10 text-accent" />
                         <a 
@@ -56,8 +56,6 @@ const CertificateCard: React.FC<CertificateCardProps> = ({ certificate, index, f
                         </ul>
                     </div>
                 </div>
-
-                {/* Back Side */}
                 <div className="flip-card-back bg-navy p-2 flex items-center justify-center">
                     {certificate.imageUrl ? (
                          <img src={certificate.imageUrl} alt={`${certificate.title} certificate preview`} className="w-full h-full object-contain rounded-md" loading="lazy" />
@@ -70,39 +68,39 @@ const CertificateCard: React.FC<CertificateCardProps> = ({ certificate, index, f
     );
 };
 
-
+// Certificates component (Yeh poora badal gaya hai)
 const Certificates: React.FC = () => {
-    const [showAll, setShowAll] = useState(false);
     const [flippedCardIndex, setFlippedCardIndex] = useState<number | null>(null);
-    const certificatesToShow = showAll ? CERTIFICATES_DATA : CERTIFICATES_DATA.slice(0, 6);
+    let globalCertIndex = 0;
 
     return (
         <section id="certificates" className="py-24">
             <FadeIn>
                 <SectionTitle title="Professional Certificates" />
             </FadeIn>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {certificatesToShow.map((cert, index) => (
-                    <FadeIn key={cert.title + index} delay={(index % 6) * 75}>
-                        <CertificateCard 
-                            certificate={cert}
-                            index={index}
-                            flippedIndex={flippedCardIndex}
-                            setFlippedIndex={setFlippedCardIndex}
-                        />
+            
+            <div className="space-y-16">
+                {CERTIFICATE_CATEGORIES.map((category) => (
+                    <FadeIn key={category.title}>
+                        <h3 className="text-xl font-bold text-lightest-slate mb-6 pl-4 border-l-4 border-accent">{category.title}</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            {category.certificates.map((cert, certIndex) => {
+                                const currentIndex = globalCertIndex++;
+                                return (
+                                    <FadeIn key={cert.title + certIndex} delay={certIndex * 75}>
+                                        <CertificateCard 
+                                            certificate={cert}
+                                            index={currentIndex}
+                                            flippedIndex={flippedCardIndex}
+                                            setFlippedIndex={setFlippedCardIndex}
+                                        />
+                                    </FadeIn>
+                                );
+                            })}
+                        </div>
                     </FadeIn>
                 ))}
             </div>
-            {CERTIFICATES_DATA.length > 6 && (
-                <FadeIn className="text-center mt-12">
-                    <button 
-                        onClick={() => setShowAll(!showAll)}
-                        className="text-accent border border-accent rounded px-8 py-4 font-mono hover:bg-accent/10 transition-colors duration-300"
-                    >
-                        {showAll ? 'Show Less' : 'Show More'}
-                    </button>
-                </FadeIn>
-            )}
         </section>
     );
 };
