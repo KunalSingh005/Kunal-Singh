@@ -29,7 +29,8 @@ const About: React.FC = () => {
                     <div>
                         <div className="absolute inset-0 bg-accent rounded-lg transform transition duration-300 group-hover:translate-x-3 group-hover:translate-y-3"></div>
                         <div className="relative bg-navy rounded-lg overflow-hidden">
-                            <img src="https://picsum.photos/seed/devops/500/500" alt="Tech" className="w-full h-full object-cover transition duration-300 group-hover:grayscale-0 grayscale" />
+                            {/* --- YEH LINE BADAL GAYI HAI --- */}
+                            <img src="/profile-photo.jpg" alt="Kunal Singh" className="w-full h-full object-cover transition duration-300 group-hover:grayscale-0 grayscale" />
                             <div className="absolute inset-0 bg-dark-navy/50 group-hover:bg-dark-navy/20 transition duration-300"></div>
                         </div>
                     </div>
