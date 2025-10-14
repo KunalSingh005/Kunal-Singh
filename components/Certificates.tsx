@@ -5,7 +5,6 @@ import type { CertificateItem } from '../types';
 import { CertificateIcon, ExternalLinkIcon } from './icons';
 import FadeIn from './FadeIn';
 
-// CertificateCard component (Ismein koi change nahi hai)
 interface CertificateCardProps {
     certificate: CertificateItem;
     index: number;
@@ -32,7 +31,8 @@ const CertificateCard: React.FC<CertificateCardProps> = ({ certificate, index, f
             onClick={handleCardClick}
         >
             <div className={`flip-card-inner ${isFlipped ? 'flipped' : ''}`}>
-                <div className="flip-card-front bg-navy p-6 shadow-lg flex flex-col group-hover:-translate-y-2 transition-transform duration-300 h-full">
+                {/* Front Side */}
+                <div className="flip-card-front bg-navy p-6 shadow-lg flex flex-col h-full group-hover:-translate-y-2 transition-transform duration-300">
                     <div className="flex justify-between items-center mb-4">
                         <CertificateIcon className="w-10 h-10 text-accent" />
                         <a 
@@ -56,6 +56,8 @@ const CertificateCard: React.FC<CertificateCardProps> = ({ certificate, index, f
                         </ul>
                     </div>
                 </div>
+
+                {/* Back Side */}
                 <div className="flip-card-back bg-navy p-2 flex items-center justify-center">
                     {certificate.imageUrl ? (
                          <img src={certificate.imageUrl} alt={`${certificate.title} certificate preview`} className="w-full h-full object-contain rounded-md" loading="lazy" />
@@ -68,10 +70,10 @@ const CertificateCard: React.FC<CertificateCardProps> = ({ certificate, index, f
     );
 };
 
-// Certificates component (Yeh poora badal gaya hai)
+
 const Certificates: React.FC = () => {
     const [flippedCardIndex, setFlippedCardIndex] = useState<number | null>(null);
-    let globalCertIndex = 0;
+    let globalCardIndex = 0;
 
     return (
         <section id="certificates" className="py-24">
@@ -80,17 +82,20 @@ const Certificates: React.FC = () => {
             </FadeIn>
             
             <div className="space-y-16">
-                {CERTIFICATE_CATEGORIES.map((category) => (
-                    <FadeIn key={category.title}>
-                        <h3 className="text-xl font-bold text-lightest-slate mb-6 pl-4 border-l-4 border-accent">{category.title}</h3>
+                {CERTIFICATE_CATEGORIES.map((category, categoryIndex) => (
+                    <FadeIn key={category.title} stagger={100}>
+                        <h3 className="text-xl md:text-2xl font-bold text-accent mb-8 flex items-center gap-4">
+                           <span className="font-mono text-lg md:text-xl text-slate">0{categoryIndex + 1}.</span>
+                           {category.title}
+                        </h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            {category.certificates.map((cert, certIndex) => {
-                                const currentIndex = globalCertIndex++;
+                            {category.certificates.map((cert) => {
+                                const currentCardIndex = globalCardIndex++;
                                 return (
-                                    <FadeIn key={cert.title + certIndex} delay={certIndex * 75}>
+                                    <FadeIn key={cert.title + currentCardIndex}>
                                         <CertificateCard 
                                             certificate={cert}
-                                            index={currentIndex}
+                                            index={currentCardIndex}
                                             flippedIndex={flippedCardIndex}
                                             setFlippedIndex={setFlippedCardIndex}
                                         />
