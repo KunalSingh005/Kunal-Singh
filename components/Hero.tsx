@@ -34,7 +34,8 @@ const Hero: React.FC = () => {
                 </FadeIn>
                 <FadeIn delay={600}>
                     <div className="mt-8 flex flex-wrap gap-4">
-                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" 
+                        {/* --- YEH LINE BADAL GAYI HAI --- */}
+                        <a href="/Kunal Singh Resume.pdf" target="_blank" rel="noopener noreferrer" 
                            className="inline-block text-accent border border-accent rounded px-8 py-4 font-mono hover:bg-accent/10 transition-colors duration-300">
                             Download Resume
                         </a>
