@@ -1,4 +1,4 @@
-import type { ExperienceItem, Project, SkillCategory, EducationItem, CertificateItem } from './types';
+import type { ExperienceItem, Project, SkillCategory, EducationItem, CertificateCategory } from './types';
 
 export const NAV_LINKS = [
     { name: 'About', href: '#about' },
@@ -75,55 +75,57 @@ export const EDUCATION_DATA: EducationItem[] = [
     },
 ];
 
-export const CERTIFICATES_DATA: CertificateItem[] = [
-  {
-    title: 'Google Cybersecurity',
-    description: 'Certified in cybersecurity fundamentals—Python, Linux, SQL, SIEM, IDS, and threat mitigation—via Google’s hands-on, 8-course program.',
-    tags: ['Linux', 'SQL', 'Security'],
-    url: 'https://coursera.org/share/caba244fc64f5b0c36ac54679e22f50c',
-    imageUrl: '/certificates/google-cybersecurity-cert.jpg',
-  },
-  {
-    title: 'AWS Certified Cloud Practitioner',
-    description: 'Validates foundational, high-level understanding of AWS Cloud, services, and terminology.',
-    tags: ['AWS', 'Cloud', 'Foundations'],
-    url: '#',
-    imageUrl: 'https://picsum.photos/seed/aws-practitioner/500/350',
-  },
-  {
-    title: 'Certified Kubernetes Administrator (CKA)',
-    description: 'Proves the ability to perform the responsibilities of a Kubernetes administrator.',
-    tags: ['Kubernetes', 'Containers', 'Orchestration'],
-    url: '#',
-    imageUrl: 'https://picsum.photos/seed/cka-cert/500/350',
-  },
-  {
-    title: 'Docker Certified Associate (DCA)',
-    description: 'Validates skills with Docker containerization technology, from development to production.',
-    tags: ['Docker', 'Containers'],
-    url: '#',
-    imageUrl: 'https://picsum.photos/seed/dca-cert/500/350',
-  },
-  {
-    title: 'Red Hat Certified System Administrator (RHCSA)',
-    description: 'Demonstrates core system administration skills required in Red Hat Enterprise Linux environments.',
-    tags: ['Linux', 'Red Hat', 'SysAdmin'],
-    url: '#',
-    imageUrl: 'https://picsum.photos/seed/rhcsa-cert/500/350',
-  },
-  {
-    title: 'CompTIA Security+',
-    description: 'A global certification that validates the baseline skills necessary to perform core security functions.',
-    tags: ['Security', 'Networking'],
-    url: '#',
-    imageUrl: 'https://picsum.photos/seed/security-plus/500/350',
-  },
-  // Generating more placeholder certificates to reach 33
-  ...Array.from({ length: 27 }, (_, i) => ({
-    title: `Placeholder Certificate ${i + 1}`,
-    description: `This is a placeholder description for certificate number ${i + 7}, showcasing a diverse skill set.`,
-    tags: ['Tech', `Skill ${i + 1}`],
-    url: '#',
-    imageUrl: `https://picsum.photos/seed/placeholder-${i + 1}/500/350`,
-  })),
+// Poora certificate data yahaan hai
+export const CERTIFICATE_CATEGORIES: CertificateCategory[] = [
+    {
+        title: 'Foundations (IT + Basic Cybersecurity)',
+        certificates: [
+            { title: 'Google IT Support Certificate', description: 'Certified in IT support fundamentals, troubleshooting, networking, and operating systems.', tags: ['IT Support', 'Networking'], url: '#', imageUrl: '/certificates/placeholder.jpg' },
+            { title: 'Introduction to Information Security', description: 'Certified in foundational information security principles and practices.', tags: ['Security', 'InfoSec'], url: '#', imageUrl: '/certificates/placeholder.jpg' },
+            { title: 'Introduction to Cyber Security', description: 'Certified in core cybersecurity concepts, risks, and defense strategies.', tags: ['Cybersecurity'], url: '#', imageUrl: '/certificates/placeholder.jpg' },
+        ],
+    },
+    {
+        title: 'Linux & System Administration',
+        certificates: [
+            { title: 'NDG Linux Unhatched', description: 'Certified in Linux essentials, command line, and system administration.', tags: ['Linux', 'SysAdmin'], url: '#', imageUrl: '/certificates/placeholder.jpg' },
+            { title: 'Google: Linux and SQL', description: 'Certified in Linux and SQL for system and database management.', tags: ['Linux', 'SQL'], url: '#', imageUrl: '/certificates/placeholder.jpg' },
+        ],
+    },
+    {
+        title: 'Programming & Scripting',
+        certificates: [
+            { title: 'Python Basic Certificate', description: 'Certified in Python programming fundamentals.', tags: ['Python', 'Scripting'], url: '#', imageUrl: '/certificates/placeholder.jpg' },
+            { title: 'Google: Automate Cybersecurity with Python', description: 'Certified in using Python to automate security workflows.', tags: ['Python', 'Automation'], url: '#', imageUrl: '/certificates/placeholder.jpg' },
+        ],
+    },
+    {
+        title: 'Cloud & Infrastructure',
+        certificates: [
+            { title: 'AWS For Beginners', description: 'Certified in AWS cloud fundamentals, IAM, EC2, and S3.', tags: ['AWS', 'Cloud'], url: '#', imageUrl: '/certificates/placeholder.jpg' },
+            { title: 'Coursera: AWS S3 Basics', description: 'Certified in AWS S3 storage, configuration, and management.', tags: ['AWS S3', 'Storage'], url: '#', imageUrl: '/certificates/placeholder.jpg' },
+        ],
+    },
+    {
+        title: 'DevOps Tools & Practices',
+        certificates: [
+            { title: 'DevOps Prerequisite Course', description: 'Certified in DevOps foundations, version control, and CI/CD basics.', tags: ['DevOps', 'CI/CD'], url: '#', imageUrl: '/certificates/placeholder.jpg' },
+            { title: 'Docker Best Practices', description: 'Certified in Docker containerization and deployment best practices.', tags: ['Docker', 'Containers'], url: '#', imageUrl: '/certificates/placeholder.jpg' },
+        ],
+    },
+    {
+        title: 'Core Cybersecurity (Google Specialization)',
+        certificates: [
+            { title: 'Google Cybersecurity Certificate', description: 'Certified in cybersecurity fundamentals—Python, Linux, SQL, SIEM, IDS, and threat mitigation.', tags: ['Security', 'Google', 'SIEM'], url: 'https://coursera.org/share/caba244fc64f5b0c36ac54679e22f50c', imageUrl: '/certificates/google-cybersecurity.jpg' },
+            { title: 'Google: Assets, Threats, and Vulnerabilities', description: 'Certified in identifying assets, threats, and vulnerabilities in security contexts.', tags: ['Security', 'Risk'], url: '#', imageUrl: '/certificates/placeholder.jpg' },
+            { title: 'Google: Networks and Network Security', description: 'Certified in networking fundamentals and network security practices.', tags: ['Networking', 'Security'], url: '#', imageUrl: '/certificates/placeholder.jpg' },
+        ],
+    },
+    {
+        title: 'Advanced Cybersecurity & Specialization',
+        certificates: [
+            { title: 'Advanced Cyber Security - Threats and Governance', description: 'Certified in advanced cybersecurity governance, compliance, and risk management.', tags: ['Advanced Security'], url: '#', imageUrl: '/certificates/placeholder.jpg' },
+            { title: 'Introduction to Ethical Hacking', description: 'Certified in ethical hacking fundamentals and penetration testing basics.', tags: ['Ethical Hacking'], url: '#', imageUrl: '/certificates/placeholder.jpg' },
+        ],
+    },
 ];
