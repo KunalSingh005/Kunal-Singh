@@ -31,8 +31,7 @@ export interface CertificateItem {
     imageUrl?: string;
 }
 
-// Yeh naya type add hua hai
 export interface CertificateCategory {
-    title: string;
-    certificates: CertificateItem[];
+  title: string;
+  certificates: CertificateItem[];
 }
