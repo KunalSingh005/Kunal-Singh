@@ -81,7 +81,7 @@ export const CERTIFICATES_DATA: CertificateItem[] = [
     description: 'Certified in cybersecurity fundamentals—Python, Linux, SQL, SIEM, IDS, and threat mitigation—via Google’s hands-on, 8-course program.',
     tags: ['Linux', 'SQL', 'Security'],
     url: 'https://coursera.org/share/caba244fc64f5b0c36ac54679e22f50c',
-    imageUrl: 'https://picsum.photos/seed/google-cybersecurity/500/350',
+    imageUrl: '/certificates/google-cybersecurity-cert.jpg',
   },
   {
     title: 'AWS Certified Cloud Practitioner',
