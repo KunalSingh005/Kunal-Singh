@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kunal Singh - DevOps Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      /* Custom Animations & Techy Theme Styles */
+      @keyframes slideDown {
+        from { transform: translateY(-100%); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+
+      @keyframes fadeInUp {
+        from { transform: translateY(20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+
+      .animate-slide-down {
+        animation: slideDown 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+      }
+      
+      .animate-fade-in-up {
+        animation: fadeInUp 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+        animation-delay: 1.5s;
+        opacity: 0;
+      }
+
+      /* Animated background */
+      body {
+        position: relative;
+        overflow-x: hidden;
+      }
+      body::before {
+          content: '';
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: radial-gradient(circle at 20% 20%, rgba(100, 255, 218, 0.05), transparent 30%),
+                      radial-gradient(circle at 80% 70%, rgba(35, 53, 84, 0.2), transparent 40%);
+          background-color: #020c1b; /* dark-navy from new theme */
+          z-index: -1;
+          animation: move-glow 20s infinite alternate ease-in-out;
+      }
+
+      @keyframes move-glow {
+          0% { background-position: 0% 50%, 50% 100%; }
+          100% { background-position: 100% 50%, 0% 0%; }
+      }
+
+      /* Glow effect */
+      .text-accent, .border-accent {
+        text-shadow: 0 0 5px rgba(100, 255, 218, 0.5);
+      }
+      .border-accent {
+        box-shadow: 0 0 5px rgba(100, 255, 218, 0.5);
+      }
+      .hover\\:bg-accent\\/10:hover {
+        box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+      }
+
+      /* Card flip animation */
+      .flip-card {
+        perspective: 1500px;
+      }
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      .flip-card .flipped {
+        transform: rotateY(180deg);
+      }
+      .flip-card-front, .flip-card-back {
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+        border-radius: 0.5rem; /* Corresponds to rounded-lg */
+      }
+      .flip-card-back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotateY(180deg);
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+              mono: ['Roboto Mono', 'monospace'],
+            },
+            colors: {
+              'dark-navy': '#020c1b',
+              'navy': '#0a192f',
+              'light-navy': '#112240',
+              'slate': '#8892b0',
+              'light-slate': '#a8b2d1',
+              'lightest-slate': '#ccd6f6',
+              'accent': '#64ffda',
+            },
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-dark-navy">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
