@@ -40,10 +40,16 @@ export const PROJECTS_DATA: Project[] = [
         repoUrl: 'https://github.com/KunalSingh005/dockerized-portfolio-website',
     },
     {
-        title: 'Portfolio with CI/CD Pipeline',
+        title: 'Portfolio with Automated CI/CD Pipeline',
         description: 'Engineered an automated CI/CD pipeline using GitHub Actions to deploy my personal portfolio website to GitHub Pages on every code push.',
         tech: ['GitHub Actions', 'CI/CD'],
         repoUrl: 'https://github.com/KunalSingh005/portfolio-website-cicd',
+    },
+    {
+        title: 'Dockerized Portfolio Website',
+        description: 'This project demonstrates the process of containerizing a simple static portfolio website using Docker.',
+        tech: ['Docker', 'NGINX'],
+        repoUrl: 'https://github.com/KunalSingh005/dockerized-portfolio-website',
     },
     {
         title: 'Automated Folder Backup Script',
