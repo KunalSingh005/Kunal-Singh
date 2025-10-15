@@ -85,6 +85,7 @@ export const CERTIFICATE_CATEGORIES: CertificateCategory[] = [
         title: 'Programming & Scripting',
         certificates: [
             { title: 'Python Basic Certificate (HackerRank)', description: 'Certified in Python programming fundamentals and problem-solving skills.', tags: ['Python', 'Scripting'], url: 'https://www.hackerrank.com/certificates/6d42ad521592', imageUrl: '/certificates/python_basic certificate Kunal conv 1.jpeg' },
+            { title: 'Go Basic Certificate', description: 'Demonstrates foundational knowledge of the Go programming language, including syntax and core concepts.', tags: ['Go', 'Programming'], url: 'https://www.hackerrank.com/certificates/03adadf7c71e', imageUrl: '/certificates/golang_basic certificate conv 1.jpeg' },
             { title: 'Python for Machine Learning', description: 'Certified in applying Python for data analysis and machine learning basics.', tags: ['Python', 'ML'], url: 'https://verify.mygreatlearning.com/LBXBOKNY', imageUrl: '/certificates/Python for Machine Learning Kunal Singh conv 1.jpeg' },
             { title: 'Google: Automate Cybersecurity with Python', description: 'Certified in using Python to automate security workflows.', tags: ['Python', 'Automation'], url: 'https://coursera.org/verify/A5537QEWPJKU', imageUrl: '/certificates/Google Automate Cybersecurity Tasks with Python Certificate (1) conv 1.jpeg' },
         ],
