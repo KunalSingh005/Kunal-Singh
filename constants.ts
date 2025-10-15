@@ -116,12 +116,13 @@ export const CERTIFICATE_CATEGORIES: CertificateCategory[] = [
     {
         title: 'Core Cybersecurity (Google Specialization)',
         certificates: [
-            { title: 'Google Cybersecurity Certificate', description: 'Certified in cybersecurity fundamentals—Python, Linux, SQL, SIEM, IDS, and threat mitigation.', tags: ['Security', 'Google', 'SIEM'], url: 'https://coursera.org/share/caba244fc64f5b0c36ac54679e22f50c', imageUrl: '/certificates/Google Cybersecruity Certificate conv 1.jpeg' },
+            { title: 'Google Foundation of Cybersecurity Certificate', description: 'Certified in comprehensive understanding of core cybersecurity principles, including threat landscapes, network security essentials, and foundational risk management.', tags: ['Security', 'Google', 'SIEM'], url: 'https://coursera.org/share/caba244fc64f5b0c36ac54679e22f50c', imageUrl: '/certificates/Google Foundation of Cybersecurity Certificate conv 1.jpeg' },
             { title: 'Google: Assets, Threats, and Vulnerabilities', description: 'Certified in identifying assets, threats, and vulnerabilities in security contexts.', tags: ['Security', 'Risk'], url: '#', imageUrl: '/certificates/Google Assets, Threats, and Vulnerabilities Certificate conv 1.jpeg' },
             { title: 'Google: Networks and Network Security', description: 'Certified in networking fundamentals and network security practices.', tags: ['Networking', 'Security'], url: '#', imageUrl: '/certificates/Google Networks and Network Security Certificate conv 1.jpeg' },
             { title: 'Google: Play it Safe (Cybersecurity)', description: 'Certified in security best practices, risk management, and safe computing.', tags: ['Security', 'Best Practices'], url: '#', imageUrl: '/certificates/Google Play it Safe Cybersecurity Certificate conv 1.jpeg' },
             { title: 'Google: Prepare for Cybersecurity Job', description: 'Certified in job-ready cybersecurity skills and career preparation.', tags: ['Career', 'Security'], url: '#', imageUrl: '/certificates/Google Put it to work Prepare for Cybersecurity job Certificate conv 1.jpeg' },
             { title: 'Google: Sound the Alarm (Detection and Response)', description: 'Certified in incident detection, response, and SIEM tools.', tags: ['SIEM', 'Response'], url: '#', imageUrl: '/certificates/Google Sound the Alarm Detection and Response Certificate conv 1.jpeg' },
+            { title: 'Google Cybersecurity Certificate', description: 'Certified in cybersecurity fundamentals—Python, Linux, SQL, SIEM, IDS, and threat mitigation.', tags: ['Security', 'Google', 'SIEM'], url: 'https://coursera.org/share/caba244fc64f5b0c36ac54679e22f50c', imageUrl: '/certificates/Google Cybersecruity Certificate conv 1.jpeg' },
         ],
     },
     {
