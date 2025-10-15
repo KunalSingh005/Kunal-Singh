@@ -1,4 +1,6 @@
-import React from 'react';
+// App.tsx
+
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -8,8 +10,25 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import Certificates from './components/Certificates';
 import Footer from './components/Footer';
+import Preloader from './components/Preloader'; // Preloader ko import karein
 
 const App: React.FC = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        // Yeh 4.5 seconds ke baad preloader ko hata dega
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 4500);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    // Jab tak loading true hai, Preloader dikhayega
+    if (loading) {
+        return <Preloader />;
+    }
+
     return (
         <div className="text-slate font-sans">
             <Navbar />
