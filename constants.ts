@@ -45,18 +45,7 @@ export const PROJECTS_DATA: Project[] = [
         tech: ['GitHub Actions', 'CI/CD'],
         repoUrl: 'https://github.com/KunalSingh005/portfolio-website-cicd',
     },
-    {
-        title: 'Automated Folder Backup Script',
-        description: 'Developed a Bash script to automate daily backups of specified folders by compressing them, designed to be scheduled via cron jobs for efficiency.',
-        tech: ['Bash', 'Automation', 'Cron'],
-        repoUrl: 'https://github.com/KunalSingh005/auto-folder-backup',
-    },
-    {
-        title: 'Log Cleaner Script',
-        description: 'A simple but practical Bash script to find and delete old `.log` and `.tmp` files to keep a Linux system clean.',
-        tech: ['Bash', 'Linux'],
-        repoUrl: 'https://github.com/KunalSingh005/log-cleaner-script',
-    },
+    // ... baaki projects ...
 ];
 
 export const SKILLS_DATA: SkillCategory[] = [
@@ -76,254 +65,73 @@ export const EDUCATION_DATA: EducationItem[] = [
 ];
 
 export const CERTIFICATE_CATEGORIES: CertificateCategory[] = [
-  {
-    title: 'Foundations (IT + Basic Cybersecurity)',
-    certificates: [
-      {
-        title: 'Google IT Support',
-        description: 'Covers troubleshooting, customer service, networking, operating systems, system administration, and security.',
-        tags: ['IT Support', 'Networking', 'Security'],
-        url: '#',
-        imageUrl: '/certificates/Google IT Support Certificate.jpeg',
-      },
-      {
-        title: 'Introduction to Information Security',
-        description: 'Fundamental concepts of information security, risk management, and security principles.',
-        tags: ['InfoSec', 'Fundamentals'],
-        url: '#',
-        imageUrl: '/certificates/Introduction to Information Security Kunal Singh conv 1.jpeg',
-      },
-      {
-        title: 'Introduction to Cyber Security',
-        description: 'An overview of the cybersecurity landscape, common threats, and foundational defense strategies.',
-        tags: ['Cybersecurity', 'Beginner'],
-        url: '#',
-        imageUrl: '/certificates/Introduction to Cyber Security Kunal Singh conv 1.jpeg',
-      },
-      {
-        title: 'Types of Cyber Security',
-        description: 'Explores various domains within cybersecurity such as network, application, and cloud security.',
-        tags: ['Cybersecurity', 'Domains'],
-        url: '#',
-        imageUrl: '/certificates/Types of Cyber Security Kunal Singh conv 1.jpeg',
-      },
-      {
-        title: 'Cyber Security Threats',
-        description: 'Identifies and analyzes common cybersecurity threats, vulnerabilities, and attack vectors.',
-        tags: ['Threats', 'Vulnerabilities'],
-        url: '#',
-        imageUrl: '/certificates/Cyber Security Threats Kunal Singh conv 1.jpeg',
-      },
-      {
-        title: 'Introduction to Cybersecurity Badge',
-        description: 'Badge awarded for completing foundational cybersecurity coursework and demonstrating key concepts.',
-        tags: ['Badge', 'Cybersecurity'],
-        url: '#',
-        imageUrl: '/certificates/Introduction_to_Cybersecurity Badge conv 1.jpeg',
-      },
-    ],
-  },
-  {
-    title: 'Linux & System Administration',
-    certificates: [
-      {
-        title: 'NDG Linux Unhatched',
-        description: 'An introduction to the Linux command line, covering basic commands and concepts.',
-        tags: ['Linux', 'CLI', 'Beginner'],
-        url: '#',
-        imageUrl: '/certificates/KunalSingh-NDG Linux Unhatc-certificate conv 1.jpeg',
-      },
-      {
-        title: 'Google - Tools of the Trade: Linux and SQL',
-        description: 'Covers essential command-line tools for Linux and fundamental SQL for data management.',
-        tags: ['Linux', 'SQL', 'Tools'],
-        url: '#',
-        imageUrl: '/certificates/Google Tools of the Trade Linux and SQL Certificates conv 1.jpeg',
-      },
-    ],
-  },
-  {
-    title: 'Programming & Scripting',
-    certificates: [
-      {
-        title: 'Python (Basic)',
-        description: 'Certificate for demonstrating foundational knowledge of Python programming.',
-        tags: ['Python', 'Scripting'],
-        url: '#',
-        imageUrl: '/certificates/python_basic certificate Kunal conv 1.jpeg',
-      },
-      {
-        title: 'Python for Machine Learning',
-        description: 'Covers essential Python libraries like NumPy, Pandas, and Scikit-learn for machine learning tasks.',
-        tags: ['Python', 'Machine Learning'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/python-ml/500/350',
-      },
-      {
-        title: 'Google - Automate Cybersecurity Tasks with Python',
-        description: 'Focuses on using Python to automate security-related tasks, including log analysis and forensics.',
-        tags: ['Python', 'Automation', 'Cybersecurity'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/python-auto/500/350',
-      },
-    ],
-  },
-  {
-    title: 'Web & Frontend Basics',
-    certificates: [
-      {
-        title: 'HackerRank CSS',
-        description: 'Certification for proficiency in CSS, covering selectors, layouts, and responsive design.',
-        tags: ['CSS', 'Frontend', 'HackerRank'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/css-cert/500/350',
-      },
-      {
-        title: 'Create a Website using WordPress',
-        description: 'Project-based course on building and managing a website using the WordPress platform.',
-        tags: ['WordPress', 'Web'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/wordpress-cert/500/350',
-      },
-      {
-        title: 'ChatGPT for Beginners',
-        description: 'An introductory course on leveraging ChatGPT for various tasks and productivity.',
-        tags: ['AI', 'Productivity', 'ChatGPT'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/chatgpt-cert/500/350',
-      },
-    ],
-  },
-  {
-    title: 'Cloud & Infrastructure',
-    certificates: [
-      {
-        title: 'AWS For Beginners',
-        description: 'An introduction to Amazon Web Services, covering core services like EC2, S3, and IAM.',
-        tags: ['AWS', 'Cloud', 'Beginner'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/aws-beginner/500/350',
-      },
-      {
-        title: 'AWS S3 Basics',
-        description: 'A focused course on the features and use cases of Amazon S3 for object storage.',
-        tags: ['AWS', 'S3', 'Storage'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/aws-s3/500/350',
-      },
-    ],
-  },
-  {
-    title: 'DevOps Tools & Practices',
-    certificates: [
-      {
-        title: 'DevOps Prerequisite Course',
-        description: 'Covers foundational concepts required for starting a journey into DevOps practices and culture.',
-        tags: ['DevOps', 'CI/CD', 'Fundamentals'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/devops-prereq/500/350',
-      },
-      {
-        title: 'Docker Best Practices',
-        description: 'Guidance on writing efficient Dockerfiles, managing images, and optimizing containers.',
-        tags: ['Docker', 'Best Practices'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/docker-best/500/350',
-      },
-      {
-        title: 'Docker for Intermediate Level',
-        description: 'Explores more advanced Docker topics like networking, volumes, and multi-stage builds.',
-        tags: ['Docker', 'Intermediate'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/docker-inter/500/350',
-      },
-    ],
-  },
-  {
-    title: 'Core Cybersecurity (Google Specialization)',
-    certificates: [
-       {
-        title: 'Google Cybersecurity Professional Certificate',
-        description: 'Certified in cybersecurity fundamentals—Python, Linux, SQL, SIEM, IDS, and threat mitigation—via Google’s hands-on, 8-course program.',
-        tags: ['Google', 'Cybersecurity', 'Professional'],
-        url: 'https://coursera.org/share/caba244fc64f5b0c36ac54679e22f50c',
-        imageUrl: 'https://picsum.photos/seed/google-cybersecurity/500/350',
-      },
-      {
-        title: 'Google - Assets, Threats, and Vulnerabilities',
-        description: 'Focuses on identifying and managing assets, threats, and vulnerabilities in an organization.',
-        tags: ['Security', 'Risk Management'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/google-assets/500/350',
-      },
-      {
-        title: 'Google - Networks and Network Security',
-        description: 'Covers networking concepts and the tools and techniques used to secure computer networks.',
-        tags: ['Networking', 'Security'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/google-networks/500/350',
-      },
-      {
-        title: 'Google - Play it Safe: Manage Security Risks',
-        description: 'Teaches how to perform risk assessments and manage security risks effectively.',
-        tags: ['Security', 'Risk', 'Google'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/google-play-safe/500/350',
-      },
-      {
-        title: 'Google - Prepare for Cybersecurity Jobs',
-        description: 'Provides guidance on preparing for interviews and starting a career in cybersecurity.',
-        tags: ['Career', 'Cybersecurity', 'Google'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/google-jobs/500/350',
-      },
-      {
-        title: 'Google - Sound the Alarm: Detection and Response',
-        description: 'Covers intrusion detection systems, SIEM tools, and incident response procedures.',
-        tags: ['SIEM', 'IDS', 'Response'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/google-alarm/500/350',
-      },
-    ],
-  },
-  {
-    title: 'Advanced Cybersecurity & Specialization',
-    certificates: [
-      {
-        title: 'Advanced Cyber Security - Threats and Governance',
-        description: 'Explores advanced persistent threats, security governance, and compliance frameworks.',
-        tags: ['Advanced', 'Governance'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/adv-cyber/500/350',
-      },
-      {
-        title: 'Network Security',
-        description: 'In-depth study of network security protocols, devices, and architectures.',
-        tags: ['Network Security', 'Advanced'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/adv-netsec/500/350',
-      },
-      {
-        title: 'Introduction to Firewalls',
-        description: 'Covers the principles of firewall technology, types of firewalls, and configuration basics.',
-        tags: ['Firewall', 'Network Security'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/firewall-intro/500/350',
-      },
-      {
-        title: 'Ethical Hacking - Mobile & Network Architecture',
-        description: 'Focuses on ethical hacking techniques for mobile platforms and understanding network architecture vulnerabilities.',
-        tags: ['Ethical Hacking', 'Mobile'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/eh-mobile/500/350',
-      },
-      {
-        title: 'Introduction to Ethical Hacking',
-        description: 'Provides an overview of ethical hacking methodologies, tools, and legal considerations.',
-        tags: ['Ethical Hacking', 'Beginner'],
-        url: '#',
-        imageUrl: 'https://picsum.photos/seed/eh-intro/500/350',
-      },
-    ],
-  },
+    {
+        title: 'Foundations (IT + Basic Cybersecurity)',
+        certificates: [
+            { title: 'Google IT Support Certificate', description: 'Certified in IT support fundamentals, troubleshooting, networking, and operating systems.', tags: ['IT Support', 'Networking'], url: '#', imageUrl: '/certificates/Google IT Support Certificate.jpeg' },
+            { title: 'Introduction to Information Security', description: 'Certified in foundational information security principles and practices.', tags: ['Security', 'InfoSec'], url: '#', imageUrl: '/certificates/Introduction to Information Security Kunal Singh conv 1.jpeg' },
+            { title: 'Introduction to Cyber Security', description: 'Certified in core cybersecurity concepts, risks, and defense strategies.', tags: ['Cybersecurity'], url: '#', imageUrl: '/certificates/Introduction to Cyber Security Kunal Singh conv 1.jpeg' },
+            { title: 'Types of Cyber Security', description: 'Certified in understanding domains of cybersecurity including network, application, and cloud.', tags: ['Cybersecurity'], url: '#', imageUrl: '/certificates/Types of Cyber Security Kunal Singh conv 1.jpeg' },
+            { title: 'Cyber Security Threats', description: 'Certified in identifying and analyzing common cybersecurity threats and vulnerabilities.', tags: ['Threats', 'Security'], url: '#', imageUrl: '/certificates/Cyber Security Threats Kunal Singh conv 1.jpeg' },
+        ],
+    },
+    {
+        title: 'Linux & System Administration',
+        certificates: [
+            { title: 'NDG Linux Unhatched', description: 'Certified in Linux essentials, command line, and system administration.', tags: ['Linux', 'SysAdmin'], url: '#', imageUrl: '/certificates/KunalSingh-NDG Linux Unhatc-certificate conv 1.jpeg' },
+            { title: 'Google: Tools of the Trade (Linux and SQL)', description: 'Certified in Linux and SQL for system and database management.', tags: ['Linux', 'SQL'], url: '#', imageUrl: '/certificates/Google Tools of the Trade Linux and SQL Certificates conv 1.jpeg' },
+        ],
+    },
+    {
+        title: 'Programming & Scripting',
+        certificates: [
+            { title: 'Python Basic Certificate', description: 'Certified in Python programming fundamentals.', tags: ['Python', 'Scripting'], url: '#', imageUrl: '/certificates/python_basic certificate Kunal conv 1.jpeg' },
+            { title: 'Python for Machine Learning', description: 'Certified in applying Python for data analysis and machine learning basics.', tags: ['Python', 'ML'], url: '#', imageUrl: '/certificates/Python for Machine Learning Kunal Singh conv 1.jpeg' },
+            { title: 'Google: Automate Cybersecurity with Python', description: 'Certified in using Python to automate security workflows.', tags: ['Python', 'Automation'], url: '#', imageUrl: '/certificates/Google Automate Cybersecurity Tasks with Python Certificate (1) conv 1.jpeg' },
+        ],
+    },
+    {
+        title: 'Web & Frontend Basics',
+        certificates: [
+            { title: 'HackerRank CSS Certificate', description: 'Certified in CSS fundamentals for web styling and design.', tags: ['CSS', 'Frontend'], url: '#', imageUrl: '/certificates/Hacker Rank Css Certificate conv 1.jpeg' },
+            { title: 'Coursera: Create WordPress Website', description: 'Certified in building and deploying WordPress websites.', tags: ['WordPress', 'Web'], url: '#', imageUrl: '/certificates/Coursera Create Wordpress Website Project Certificate conv 1.jpeg' },
+            { title: 'ChatGPT for Beginners', description: 'Certified in leveraging AI tools for productivity and automation.', tags: ['AI', 'Tools'], url: '#', imageUrl: '/certificates/ChatGPT for Beginners Kunal Singh conv 1.jpeg' },
+        ],
+    },
+    {
+        title: 'Cloud & Infrastructure',
+        certificates: [
+            { title: 'AWS For Beginners', description: 'Certified in AWS cloud fundamentals, IAM, EC2, and S3.', tags: ['AWS', 'Cloud'], url: '#', imageUrl: '/certificates/AWS For Beginners Kunal Singh conv 1.jpeg' },
+            { title: 'Coursera: AWS S3 Basics', description: 'Certified in AWS S3 storage, configuration, and management.', tags: ['AWS S3', 'Storage'], url: '#', imageUrl: '/certificates/Coursera AWS S3 Basics Certificate conv 1.jpeg' },
+        ],
+    },
+    {
+        title: 'DevOps Tools & Practices',
+        certificates: [
+            { title: 'DevOps Prerequisite Course', description: 'Certified in DevOps foundations, version control, and CI/CD basics.', tags: ['DevOps', 'CI/CD'], url: '#', imageUrl: '/certificates/DevOps Prerequisite Course conv 1.jpeg' },
+            { title: 'Docker Best Practices', description: 'Certified in Docker containerization and deployment best practices.', tags: ['Docker', 'Containers'], url: '#', imageUrl: '/certificates/Docker Best Practices Kunal Singh conv 1.jpeg' },
+            { title: 'Docker for Intermediate Level', description: 'Certified in advanced Docker usage for scalable applications.', tags: ['Docker', 'Advanced'], url: '#', imageUrl: '/certificates/Docker for Intermediate Level Kunal Singh conv 1.jpeg' },
+        ],
+    },
+    {
+        title: 'Core Cybersecurity (Google Specialization)',
+        certificates: [
+            { title: 'Google Cybersecurity Certificate', description: 'Certified in cybersecurity fundamentals—Python, Linux, SQL, SIEM, IDS, and threat mitigation.', tags: ['Security', 'Google', 'SIEM'], url: 'https://coursera.org/share/caba244fc64f5b0c36ac54679e22f50c', imageUrl: '/certificates/Google Cybersecurity Certificate conv 1.jpeg' },
+            { title: 'Google: Assets, Threats, and Vulnerabilities', description: 'Certified in identifying assets, threats, and vulnerabilities in security contexts.', tags: ['Security', 'Risk'], url: '#', imageUrl: '/certificates/Google Assets, Threats, and Vulnerabilities Certificate conv 1.jpeg' },
+            { title: 'Google: Networks and Network Security', description: 'Certified in networking fundamentals and network security practices.', tags: ['Networking', 'Security'], url: '#', imageUrl: '/certificates/Google Networks and Network Security Certificate conv 1.jpeg' },
+            { title: 'Google: Play it Safe (Cybersecurity)', description: 'Certified in security best practices, risk management, and safe computing.', tags: ['Security', 'Best Practices'], url: '#', imageUrl: '/certificates/Google Play it Safe Cybersecurity Certificate conv 1.jpeg' },
+            { title: 'Google: Prepare for Cybersecurity Job', description: 'Certified in job-ready cybersecurity skills and career preparation.', tags: ['Career', 'Security'], url: '#', imageUrl: '/certificates/Google Put it to work Prepare for Cybersecurity job Certificate conv 1.jpeg' },
+            { title: 'Google: Sound the Alarm (Detection and Response)', description: 'Certified in incident detection, response, and SIEM tools.', tags: ['SIEM', 'Response'], url: '#', imageUrl: '/certificates/Google Sound the Alarm Detection and Response Certificate conv 1.jpeg' },
+        ],
+    },
+    {
+        title: 'Advanced Cybersecurity & Specialization',
+        certificates: [
+            { title: 'Advanced Cyber Security - Threats and Governance', description: 'Certified in advanced cybersecurity governance, compliance, and risk management.', tags: ['Advanced Security'], url: '#', imageUrl: '/certificates/Advanced Cyber Security - Threats and Governance Kunal Singh conv 1.jpeg' },
+            { title: 'Network Security', description: 'Certified in network defense, firewalls, and intrusion prevention.', tags: ['Network Security'], url: '#', imageUrl: '/certificates/Network Security Kunal Singh conv 1.jpeg' },
+            { title: 'Introduction to Firewall', description: 'Certified in firewall fundamentals and configuration basics.', tags: ['Firewall', 'Security'], url: '#', imageUrl: '/certificates/Introduction to Firewall Kunal Singh conv 1.jpeg' },
+            { title: 'Ethical Hacking: Mobile & Network', description: 'Certified in ethical hacking for mobile and network systems.', tags: ['Ethical Hacking'], url: '#', imageUrl: '/certificates/Ethical Hacking - Mobile Platforms and Network Architecture Kunal Singh conv 1.jpeg' },
+            { title: 'Introduction to Ethical Hacking', description: 'Certified in ethical hacking fundamentals and penetration testing basics.', tags: ['Ethical Hacking'], url: '#', imageUrl: '/certificates/Introduction to Ethical Hacking Kunal Singh conv 1.jpeg' },
+        ],
+    },
 ];
