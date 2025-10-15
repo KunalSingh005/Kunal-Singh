@@ -45,6 +45,18 @@ export const PROJECTS_DATA: Project[] = [
         tech: ['GitHub Actions', 'CI/CD'],
         repoUrl: 'https://github.com/KunalSingh005/portfolio-website-cicd',
     },
+    {
+        title: 'Automated Folder Backup Script',
+        description: 'Developed a Bash script to automate daily backups of specified folders by compressing them, designed to be scheduled via cron jobs for efficiency.',
+        tech: ['Bash', 'Automation', 'Cron'],
+        repoUrl: 'https://github.com/KunalSingh005/auto-folder-backup',
+    },
+    {
+        title: 'Log Cleaner Script',
+        description: 'A simple but practical Bash script to find and delete old `.log` and `.tmp` files to keep a Linux system clean.',
+        tech: ['Bash', 'Linux'],
+        repoUrl: 'https://github.com/KunalSingh005/log-cleaner-script',
+    },
 ];
 
 export const SKILLS_DATA: SkillCategory[] = [
