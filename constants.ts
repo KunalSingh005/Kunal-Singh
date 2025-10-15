@@ -10,27 +10,64 @@ export const NAV_LINKS = [
 ];
 
 export const EXPERIENCE_DATA: ExperienceItem[] = [
-    // ... aapka experience data ...
+    {
+        date: 'Feb 2024 – Jun 2025',
+        title: 'Technical Support Analyst',
+        company: 'Kimbal Technology, Greater Noida',
+        description: [
+            'Improved operational efficiency for the team by 40% through process optimization and rapid technical issue resolution.',
+            'Maintained high quality standards by resolving complex internal technical issues related to systems and software.',
+            'Managed and coordinated with a team of 10 members, ensuring smooth project workflows and effective collaboration.',
+        ],
+    },
+    {
+        date: 'Nov 2022 – Nov 2023',
+        title: 'Information Technology Intern',
+        company: 'India Habitat Centre, Delhi',
+        description: [
+            'Offered on-site technical assistance and troubleshooting for Windows and Mac OS.',
+            'Managed user accounts and permissions in Windows environments.',
+            'Assisted with network connectivity issues and basic hardware maintenance.',
+        ],
+    },
 ];
 
 export const PROJECTS_DATA: Project[] = [
-    // ... aapka project data ...
+    {
+        title: 'Dockerized Application Deployment on AWS',
+        description: 'Containerized a static portfolio website using Docker and Nginx, deployed it to an AWS EC2 instance, and pushed the final image to a public Docker Hub registry.',
+        tech: ['Docker', 'AWS EC2', 'Nginx'],
+        repoUrl: 'https://github.com/KunalSingh005/dockerized-portfolio-website',
+    },
+    {
+        title: 'Portfolio with CI/CD Pipeline',
+        description: 'Engineered an automated CI/CD pipeline using GitHub Actions to deploy my personal portfolio website to GitHub Pages on every code push.',
+        tech: ['GitHub Actions', 'CI/CD'],
+        repoUrl: 'https://github.com/KunalSingh005/portfolio-website-cicd',
+    },
 ];
 
 export const SKILLS_DATA: SkillCategory[] = [
-    // ... aapka skills data ...
+    { title: 'Cloud & DevOps', skills: 'AWS (EC2, S3, IAM), Docker, GitHub Actions, CI/CD, Git' },
+    { title: 'Operating Systems', skills: 'Linux (Ubuntu), Windows' },
+    { title: 'Scripting Languages', skills: 'Bash, Python (Basic)' },
+    { title: 'Web Technologies & Tools', skills: 'WordPress, AI-Powered Tools (e.g., GitHub Copilot, ChatGPT, Gemini)' },
+    { title: 'Core Concepts', skills: 'Automation, System Administration, Containerization' },
 ];
 
 export const EDUCATION_DATA: EducationItem[] = [
-    // ... aapka education data ...
+    {
+        degree: 'Bachelor of Computer Applications (BCA)',
+        institution: 'Rajdhani College, Delhi (IGNOU)',
+        year: 'Pursuing – Expected 2028',
+    },
 ];
 
-// CERTIFICATE DATA (SABHI LINKS KE SAATH UPDATED)
 export const CERTIFICATE_CATEGORIES: CertificateCategory[] = [
     {
         title: 'Foundations (IT + Basic Cybersecurity)',
         certificates: [
-            { title: 'Google IT Support Certificate', description: 'Certified in IT support fundamentals, troubleshooting, networking, and operating systems.', tags: ['IT Support', 'Networking'], url: 'https://www.coursera.org/account/accomplishments/specialization/certificate/J8INU90HKZB1', imageUrl: '/certificates/Google IT Support Certificate.jpeg' },
+            { title: 'Google IT Support Certificate', description: 'Certified in IT support fundamentals, troubleshooting, networking, and operating systems.', tags: ['IT Support', 'Networking'], url: 'https://coursera.org/verify/professional-cert/B1NU90HHXZB1', imageUrl: '/certificates/Google IT Support Certificate.jpeg' },
             { title: 'Introduction to Information Security', description: 'Certified in foundational information security principles and practices.', tags: ['Security', 'InfoSec'], url: 'https://verify.mygreatlearning.com/UQVXWAZi', imageUrl: '/certificates/Introduction to Information Security Kunal Singh conv 1.jpeg' },
             { title: 'Introduction to Cyber Security', description: 'Certified in core cybersecurity concepts, risks, and defense strategies.', tags: ['Cybersecurity'], url: 'https://verify.mygreatlearning.com/ONDSCFQK', imageUrl: '/certificates/Introduction to Cyber Security Kunal Singh conv 1.jpeg' },
             { title: 'Types of Cyber Security', description: 'Certified in understanding domains of cybersecurity including network, application, and cloud.', tags: ['Cybersecurity'], url: 'https://verify.mygreatlearning.com/GNATKCGI', imageUrl: '/certificates/Types of Cyber Security Kunal Singh conv 1.jpeg' },
