@@ -84,7 +84,7 @@ export const CERTIFICATE_CATEGORIES: CertificateCategory[] = [
         description: 'Covers troubleshooting, customer service, networking, operating systems, system administration, and security.',
         tags: ['IT Support', 'Networking', 'Security'],
         url: '#',
-        imageUrl: 'https://picsum.photos/seed/google-it/500/350',
+        imageUrl: 'Google IT Support Certificate.jpeg',
       },
       {
         title: 'Introduction to Information Security',
