@@ -20,7 +20,7 @@ const App: React.FC = () => {
         // Aap iska time badha ya ghata sakte hain
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 7000); // 7 seconds
+        }, 4000); // 4 seconds
 
         return () => clearTimeout(timer);
     }, []);
