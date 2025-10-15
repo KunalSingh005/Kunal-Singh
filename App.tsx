@@ -1,5 +1,3 @@
-// App.tsx
-
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -11,6 +9,7 @@ import Education from './components/Education';
 import Certificates from './components/Certificates';
 import Footer from './components/Footer';
 import Preloader from './components/Preloader'; // Preloader ko import karein
+import Tour from './components/Tour';         // Tour ko import karein
 
 const App: React.FC = () => {
     const [loading, setLoading] = useState(true);
@@ -29,8 +28,10 @@ const App: React.FC = () => {
         return <Preloader />;
     }
 
+    // Preloader ke baad, Tour aur baaki website dikhegi
     return (
         <div className="text-slate font-sans">
+            <Tour /> {/* Tour component yahaan hai */}
             <Navbar />
             <main className="container mx-auto px-6 sm:px-10 md:px-16">
                 <Hero />
