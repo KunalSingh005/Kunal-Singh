@@ -8,7 +8,7 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import Certificates from './components/Certificates';
 import Footer from './components/Footer';
-import Preloader from './components/Preloader'; // Preloader ko import karein
+import MatrixPreloader from './components/MatrixPreloader'; // Preloader ko import karein
 import Tour from './components/Tour';         // Tour ko import karein
 
 const App: React.FC = () => {
