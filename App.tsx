@@ -10,8 +10,10 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import Certificates from './components/Certificates';
 import Footer from './components/Footer';
+import Tour from './components/Tour';
 // --- YEH LINE BADLI HAI ---
 import MatrixPreloader from './components/MatrixPreloader'; // Purane Preloader ki jagah isey import karein
+import Tour from './components/Tour';
 
 const App: React.FC = () => {
     const [loading, setLoading] = useState(true);
