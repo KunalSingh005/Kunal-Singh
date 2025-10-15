@@ -19,7 +19,8 @@ const Hero: React.FC = () => {
                     <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 items-center font-mono text-sm text-light-slate">
                         <div className="flex items-center gap-2">
                             <PhoneIcon className="w-4 h-4 text-accent" />
-                            <span>9971356768</span>
+                            {/* --- YEH LINE BADLI HAI --- */}
+                            <a href="tel:9971356768" className="hover:text-accent transition-colors">9971356768</a>
                         </div>
                         <div className="flex items-center gap-2">
                             <MailIcon className="w-4 h-4 text-accent" />
@@ -34,7 +35,6 @@ const Hero: React.FC = () => {
                 </FadeIn>
                 <FadeIn delay={600}>
                     <div className="mt-8 flex flex-wrap gap-4">
-                        {/* --- YEH LINE BADAL GAYI HAI --- */}
                         <a href="/Kunal Singh Resume.pdf" target="_blank" rel="noopener noreferrer" 
                            className="inline-block text-accent border border-accent rounded px-8 py-4 font-mono hover:bg-accent/10 transition-colors duration-300">
                             Download Resume
