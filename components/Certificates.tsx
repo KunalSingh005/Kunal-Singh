@@ -35,16 +35,21 @@ const CertificateCard: React.FC<CertificateCardProps> = ({ certificate, index, f
                 <div className="flip-card-front bg-navy p-6 shadow-lg flex flex-col h-full group-hover:-translate-y-2 transition-transform duration-300">
                     <div className="flex justify-between items-center mb-4">
                         <CertificateIcon className="w-10 h-10 text-accent" />
-                        <a 
-                            href={certificate.url} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            onClick={handleLinkClick}
-                            className="text-light-slate hover:text-accent transition-colors z-10"
-                            aria-label={`View certificate for ${certificate.title}`}
-                        >
-                            <ExternalLinkIcon className="h-6 w-6" />
-                        </a>
+                        
+                        {/* --- YEH BADLAV HUA HAI --- */}
+                        {/* Ab link icon tabhi dikhega jab URL '#' na ho */}
+                        {certificate.url !== '#' && (
+                            <a 
+                                href={certificate.url} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                onClick={handleLinkClick}
+                                className="text-light-slate hover:text-accent transition-colors z-10"
+                                aria-label={`View certificate for ${certificate.title}`}
+                            >
+                                <ExternalLinkIcon className="h-6 w-6" />
+                            </a>
+                        )}
                     </div>
                     <h3 className="text-lg font-bold text-lightest-slate group-hover:text-accent transition-colors duration-300 mb-2">{certificate.title}</h3>
                     <p className="text-light-slate text-sm flex-grow mb-4">{certificate.description}</p>
