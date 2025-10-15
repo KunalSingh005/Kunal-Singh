@@ -1,3 +1,5 @@
+// App.tsx
+
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -8,30 +10,29 @@ import Skills from './components/Skills';
 import Education from './components/Education';
 import Certificates from './components/Certificates';
 import Footer from './components/Footer';
-import MatrixPreloader from './components/MatrixPreloader'; // Preloader ko import karein
-import Tour from './components/Tour';         // Tour ko import karein
+// --- YEH LINE BADLI HAI ---
+import MatrixPreloader from './components/MatrixPreloader'; // Purane Preloader ki jagah isey import karein
 
 const App: React.FC = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Yeh 4.5 seconds ke baad preloader ko hata dega
+        // Aap iska time badha ya ghata sakte hain
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 4500);
+        }, 4000); // 4 seconds
 
         return () => clearTimeout(timer);
     }, []);
 
-    // Jab tak loading true hai, Preloader dikhayega
     if (loading) {
-        return <Preloader />;
+        // --- AUR YEH LINE BADLI HAI ---
+        return <MatrixPreloader />; // Yahaan naya component istemal karein
     }
 
-    // Preloader ke baad, Tour aur baaki website dikhegi
     return (
         <div className="text-slate font-sans">
-            <Tour /> {/* Tour component yahaan hai */}
+            {/* Tour wala code abhi ke liye hata diya hai */}
             <Navbar />
             <main className="container mx-auto px-6 sm:px-10 md:px-16">
                 <Hero />
