@@ -40,7 +40,7 @@ A motivated and proactive tech enthusiast, currently pursuing a Bachelor of Comp
 ### 📫 Let's Connect
 
 - 🔗 **LinkedIn:** [linkedin.com/in/kunal-singh-98a45224a](https://www.linkedin.com/in/kunal-singh-98a45224a)
-- 💼 **Portfolio:** [kunalsingh005.github.io/Portfolio](https://kunalsingh005.github.io/portfolio-website-cicd/)
+- 💼 **Portfolio:** [kunalsingh005.github.io/Portfolio](https://kunal-singh-005.vercel.app/)
 
 ---
 
