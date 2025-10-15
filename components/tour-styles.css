@@ -1,0 +1,30 @@
+/* components/tour-styles.css */
+
+.shepherd-element {
+  background: #112240 !important; /* light-navy */
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.shepherd-header {
+  padding-bottom: 0;
+}
+
+.shepherd-text {
+  color: #a8b2d1; /* light-slate */
+  font-family: 'Poppins', sans-serif;
+  padding: 1em;
+}
+
+.shepherd-button {
+  background: #64ffda !important; /* accent */
+  color: #020c1b !important; /* dark-navy */
+  border-radius: 4px;
+  padding: 0.5em 1.5em !important;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+}
+
+.shepherd-arrow::before {
+  background-color: #112240 !important; /* light-navy */
+}
