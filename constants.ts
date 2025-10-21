@@ -32,6 +32,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     },
 ];
 
+// --- YEH SECTION NAYE PROJECTS KE SAATH UPDATE KIYA GAYA HAI ---
 export const PROJECTS_DATA: Project[] = [
     {
         title: 'Dockerized Application Deployment on AWS',
@@ -40,16 +41,10 @@ export const PROJECTS_DATA: Project[] = [
         repoUrl: 'https://github.com/KunalSingh005/dockerized-portfolio-website',
     },
     {
-        title: 'Portfolio with Automated CI/CD Pipeline',
+        title: 'Portfolio with CI/CD Pipeline',
         description: 'Engineered an automated CI/CD pipeline using GitHub Actions to deploy my personal portfolio website to GitHub Pages on every code push.',
         tech: ['GitHub Actions', 'CI/CD'],
         repoUrl: 'https://github.com/KunalSingh005/portfolio-website-cicd',
-    },
-    {
-        title: 'Dockerized Portfolio Website',
-        description: 'This project demonstrates the process of containerizing a simple static portfolio website using Docker.',
-        tech: ['Docker', 'NGINX'],
-        repoUrl: 'https://github.com/KunalSingh005/dockerized-portfolio-website',
     },
     {
         title: 'Automated Folder Backup Script',
@@ -63,7 +58,20 @@ export const PROJECTS_DATA: Project[] = [
         tech: ['Bash', 'Linux'],
         repoUrl: 'https://github.com/KunalSingh005/log-cleaner-script',
     },
+    { // Naya Project 1
+        title: 'Linux Performance Monitor',
+        description: 'A Bash script for a quick, color-coded summary of Linux server health (CPU, Memory, Disk, Top Processes).',
+        tech: ['Bash', 'Linux', 'awk', 'grep'],
+        repoUrl: 'https://github.com/KunalSingh005/linux-performance-monitor',
+    },
+    { // Naya Project 2
+        title: 'Log Archive Tool',
+        description: 'A command-line tool to compress a specified directory (like /var/log) into a timestamped .tar.gz archive.',
+        tech: ['Bash', 'Linux', 'tar'],
+        repoUrl: 'https://github.com/KunalSingh005/log-archive-tool',
+    },
 ];
+
 
 export const SKILLS_DATA: SkillCategory[] = [
     { title: 'Cloud & DevOps', skills: 'AWS (EC2, S3, IAM), Docker, GitHub Actions, CI/CD, Git' },
