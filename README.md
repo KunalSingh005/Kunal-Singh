@@ -27,7 +27,7 @@ I'm a motivated and proactive tech enthusiast currently pursuing my Bachelor of 
 | `log-cleaner-script`          | A practical Bash utility to keep systems tidy by removing old log/temp files. | [View Code](https://github.com/KunalSingh005/log-cleaner-script)                 |
 | `linux-performance-monitor`   | A Bash script providing a quick, color-coded health summary of a Linux server. | [View Code](https://github.com/KunalSingh005/linux-performance-monitor)     |
 | `log-archive-tool`            | A command-line utility in Bash to compress and archive log directories.    | [View Code](https://github.com/KunalSingh005/log-archive-tool)                |
-| `nginx-log-analyser`          | A Bash tool using `awk`/`sort`/`uniq` to generate reports from Nginx logs.   | *[Add Your Link Here]* |
+| `nginx-log-analyser`          | A Bash tool using `awk`/`sort`/`uniq` to generate reports from Nginx logs.   | [View Code](https://github.com/KunalSingh005/log-archive-tool) |
 
 ---
 
