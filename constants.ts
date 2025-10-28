@@ -70,6 +70,12 @@ export const PROJECTS_DATA: Project[] = [
         tech: ['Bash', 'Linux', 'tar'],
         repoUrl: 'https://github.com/KunalSingh005/log-archive-tool',
     },
+    { // Naya Project 3
+        title: 'Nginx Log Analyser',
+        description: 'A Bash script using awk, sort, and uniq to parse Nginx access logs and report top IPs, paths, status codes, and user agents.',
+        tech: ['Bash', 'Nginx', 'awk', 'Log Analysis'],
+        repoUrl: 'https://github.com/KunalSingh005/GitHub-Pages-Deployment', // <-- Yeh link update karna hai
+    },
 ];
 
 
