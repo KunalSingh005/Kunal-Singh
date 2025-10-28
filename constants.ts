@@ -74,7 +74,7 @@ export const PROJECTS_DATA: Project[] = [
         title: 'Nginx Log Analyser',
         description: 'A Bash script using awk, sort, and uniq to parse Nginx access logs and report top IPs, paths, status codes, and user agents.',
         tech: ['Bash', 'Nginx', 'awk', 'Log Analysis'],
-        repoUrl: 'https://github.com/KunalSingh005/GitHub-Pages-Deployment', // <-- Yeh link update karna hai
+        repoUrl: 'https://github.com/KunalSingh005/Nginx-Log-Analyser', // <-- Yeh link update karna hai
     },
 ];
 
